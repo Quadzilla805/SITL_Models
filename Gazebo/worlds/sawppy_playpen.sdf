@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <world name="sawppy_playpen">
+  <world name="playpen">
     <physics name="1ms" type="ignore">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
@@ -40,11 +40,12 @@
     </light>
 
     <include>
+      <pose degrees="true">0 0 0 0 0 90</pose>
       <uri>model://rover_playpen</uri>
     </include>
 
     <include>
-      <pose>0 0 0.25 0 0 0</pose>
+      <pose degrees="true">0 0 0.25 0 0 90</pose>
       <uri>model://sawppy</uri>
     </include>
 

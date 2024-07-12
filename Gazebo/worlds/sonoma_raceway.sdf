@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <world name="sonoma_raceway">
-    <plugin filename="libgz-sim-physics-system.so"
+  <world name="raceway">
+    <plugin filename="gz-sim-physics-system"
       name="gz::sim::systems::Physics">
     </plugin>
-    <plugin filename="libgz-sim-user-commands-system.so"
+    <plugin filename="gz-sim-user-commands-system"
       name="gz::sim::systems::UserCommands">
     </plugin>
-    <plugin filename="libgz-sim-scene-broadcaster-system.so"
+    <plugin filename="gz-sim-scene-broadcaster-system"
       name="gz::sim::systems::SceneBroadcaster">
     </plugin>
-    <plugin filename="libgz-sim-imu-system.so"
+    <plugin filename="gz-sim-imu-system"
       name="gz::sim::systems::Imu">
     </plugin>
 
@@ -47,28 +47,33 @@
 
     <!-- 
       A vehicle on the Sonoma Raceway start grid has a
-      heading of 0.959931 rad (-55 deg)
+      heading of 145 deg
 
-      <pose>0 0 0 0 0 0.959931089</pose>
+      <pose degrees="true">0 0 0 0 0 145</pose>
 
       Below are examples for loading different vehicles onto
       the start grid. 
       -->
 
     <!-- <include>
-      <pose>0 0 0.15 0 0 0.959931089</pose>
+      <pose degrees="true">0 0 1.0 0 0 145</pose>
+      <uri>model://daf_xf_450_tractor</uri>
+    </include> -->
+
+    <!-- <include>
+      <pose degrees="true">0 0 0.1 0 0 145</pose>
       <uri>model://wildthumper</uri>
     </include> -->
 
     <!-- <include>
-      <pose>0 0 0.15 0 0 0.959931089</pose>
-      <uri>model://iris_with_standoffs</uri>
+      <pose degrees="true">0 0 0.1 0 0 145</pose>
+      <uri>model://iris_with_ardupilot</uri>
     </include> -->
 
-    <!-- <include>
-      <pose>0 0 0.15 0 0 0.959931089</pose>
+    <include>
+      <pose degrees="true">0 0 0.15 0 0 145</pose>
       <uri>model://skywalker_x8_quad</uri>
-    </include> -->
+    </include>
 
   </world>
 </sdf>

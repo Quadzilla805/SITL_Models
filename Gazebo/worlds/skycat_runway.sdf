@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <world name="skycat_runway">
-    <plugin filename="libgz-sim-physics-system.so"
+  <world name="runway">
+    <plugin filename="gz-sim-physics-system"
       name="gz::sim::systems::Physics">
     </plugin>
-    <plugin filename="libgz-sim-user-commands-system.so"
+    <plugin filename="gz-sim-user-commands-system"
       name="gz::sim::systems::UserCommands">
     </plugin>
-    <plugin filename="libgz-sim-scene-broadcaster-system.so"
+    <plugin filename="gz-sim-scene-broadcaster-system"
       name="gz::sim::systems::SceneBroadcaster">
     </plugin>
-    <plugin filename="libgz-sim-imu-system.so"
+    <plugin filename="gz-sim-imu-system"
       name="gz::sim::systems::Imu">
     </plugin>
 
@@ -35,11 +35,12 @@
     </light>
 
     <include>
+      <pose degrees="true">-29 545 0 0 0 363</pose>
       <uri>model://runway</uri>
     </include>
 
     <include>
-      <pose>0 0 0.15 0 0 0</pose>
+      <pose degrees="true">0 0 0.15 0 0 90</pose>
       <uri>model://skycat_tvbs</uri>
     </include>
 

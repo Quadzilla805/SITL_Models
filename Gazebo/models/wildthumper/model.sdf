@@ -32,10 +32,6 @@
           </box>
         </geometry>
         <material>
-          <script>
-            <name>Gazebo/Orange</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
           <diffuse>1 0.3125 0 1</diffuse>
           <ambient>1 0.3125 0 1</ambient>
         </material>
@@ -200,7 +196,7 @@
     <link name='front_left_motor_asm_link'>
       <pose relative_to='front_left_motor_asm_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0.025 0 90 0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>2.723333333333334e-05</ixx>
@@ -212,7 +208,7 @@
         </inertia>
       </inertial>
       <collision name='front_left_motor_asm_link_collision'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+        <pose degrees="true">0 0 0 0 90 0</pose>
         <geometry>
           <cylinder>
             <length>0.064</length>
@@ -221,7 +217,7 @@
         </geometry>
       </collision>
       <collision name='front_left_motor_asm_link_collision_1'>
-        <pose>0 0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0.025 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -272,7 +268,7 @@
     <link name='front_left_wheel_link'>
       <pose relative_to='front_left_wheel_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <mass>0.19</mass>
         <inertia>
           <ixx>0.0002022409166666667</ixx>
@@ -284,7 +280,7 @@
         </inertia>
       </inertial>
       <collision name='front_left_wheel_link_collision'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.062</length>
@@ -304,7 +300,7 @@
         </surface>
       </collision>
       <collision name='front_left_wheel_link_fixed_joint_lump__front_left_wheel_adapter_link_collision_1'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.024</length>
@@ -313,7 +309,7 @@
         </geometry>
       </collision>
       <collision name='front_left_wheel_link_fixed_joint_lump__front_left_wheel_rim_link_collision_2'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -416,7 +412,7 @@
     <link name='front_right_motor_asm_link'>
       <pose relative_to='front_right_motor_asm_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 -0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 -0.025 0 90 0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>2.723333333333334e-05</ixx>
@@ -428,7 +424,7 @@
         </inertia>
       </inertial>
       <collision name='front_right_motor_asm_link_collision'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+        <pose degrees="true">0 0 0 0 90 0</pose>
         <geometry>
           <cylinder>
             <length>0.064</length>
@@ -437,7 +433,7 @@
         </geometry>
       </collision>
       <collision name='front_right_motor_asm_link_collision_1'>
-        <pose>0 -0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 -0.025 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -488,7 +484,7 @@
     <link name='front_right_wheel_link'>
       <pose relative_to='front_right_wheel_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <mass>0.19</mass>
         <inertia>
           <ixx>0.0002022409166666667</ixx>
@@ -500,7 +496,7 @@
         </inertia>
       </inertial>
       <collision name='front_right_wheel_link_collision'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.062</length>
@@ -520,7 +516,7 @@
         </surface>
       </collision>
       <collision name='front_right_wheel_link_fixed_joint_lump__front_right_wheel_adapter_link_collision_1'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.024</length>
@@ -529,7 +525,7 @@
         </geometry>
       </collision>
       <collision name='front_right_wheel_link_fixed_joint_lump__front_right_wheel_rim_link_collision_2'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -694,7 +690,7 @@
     <link name='mid_left_motor_asm_link'>
       <pose relative_to='mid_left_motor_asm_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0.025 0 90 0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>2.723333333333334e-05</ixx>
@@ -706,7 +702,7 @@
         </inertia>
       </inertial>
       <collision name='mid_left_motor_asm_link_collision'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+        <pose degrees="true">0 0 0 0 90 0</pose>
         <geometry>
           <cylinder>
             <length>0.064</length>
@@ -715,7 +711,7 @@
         </geometry>
       </collision>
       <collision name='mid_left_motor_asm_link_collision_1'>
-        <pose>0 0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0.025 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -766,7 +762,7 @@
     <link name='mid_left_wheel_link'>
       <pose relative_to='mid_left_wheel_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <mass>0.19</mass>
         <inertia>
           <ixx>0.0002022409166666667</ixx>
@@ -778,7 +774,7 @@
         </inertia>
       </inertial>
       <collision name='mid_left_wheel_link_collision'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.062</length>
@@ -798,7 +794,7 @@
         </surface>
       </collision>
       <collision name='mid_left_wheel_link_fixed_joint_lump__mid_left_wheel_adapter_link_collision_1'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.024</length>
@@ -807,7 +803,7 @@
         </geometry>
       </collision>
       <collision name='mid_left_wheel_link_fixed_joint_lump__mid_left_wheel_rim_link_collision_2'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -910,7 +906,7 @@
     <link name='mid_right_motor_asm_link'>
       <pose relative_to='mid_right_motor_asm_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 -0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 -0.025 0 90 0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>2.723333333333334e-05</ixx>
@@ -922,7 +918,7 @@
         </inertia>
       </inertial>
       <collision name='mid_right_motor_asm_link_collision'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+        <pose degrees="true">0 0 0 0 90 0</pose>
         <geometry>
           <cylinder>
             <length>0.064</length>
@@ -931,7 +927,7 @@
         </geometry>
       </collision>
       <collision name='mid_right_motor_asm_link_collision_1'>
-        <pose>0 -0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 -0.025 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -982,7 +978,7 @@
     <link name='mid_right_wheel_link'>
       <pose relative_to='mid_right_wheel_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <mass>0.19</mass>
         <inertia>
           <ixx>0.0002022409166666667</ixx>
@@ -994,7 +990,7 @@
         </inertia>
       </inertial>
       <collision name='mid_right_wheel_link_collision'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.062</length>
@@ -1014,7 +1010,7 @@
         </surface>
       </collision>
       <collision name='mid_right_wheel_link_fixed_joint_lump__mid_right_wheel_adapter_link_collision_1'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.024</length>
@@ -1023,7 +1019,7 @@
         </geometry>
       </collision>
       <collision name='mid_right_wheel_link_fixed_joint_lump__mid_right_wheel_rim_link_collision_2'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -1250,7 +1246,7 @@
     <link name='rear_left_motor_asm_link'>
       <pose relative_to='rear_left_motor_asm_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0.025 0 90 0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>2.723333333333334e-05</ixx>
@@ -1262,7 +1258,7 @@
         </inertia>
       </inertial>
       <collision name='rear_left_motor_asm_link_collision'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+        <pose degrees="true">0 0 0 0 90 0</pose>
         <geometry>
           <cylinder>
             <length>0.064</length>
@@ -1271,7 +1267,7 @@
         </geometry>
       </collision>
       <collision name='rear_left_motor_asm_link_collision_1'>
-        <pose>0 0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0.025 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -1322,7 +1318,7 @@
     <link name='rear_left_wheel_link'>
       <pose relative_to='rear_left_wheel_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <mass>0.19</mass>
         <inertia>
           <ixx>0.0002022409166666667</ixx>
@@ -1334,7 +1330,7 @@
         </inertia>
       </inertial>
       <collision name='rear_left_wheel_link_collision'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.062</length>
@@ -1354,7 +1350,7 @@
         </surface>
       </collision>
       <collision name='rear_left_wheel_link_fixed_joint_lump__rear_left_wheel_adapter_link_collision_1'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.024</length>
@@ -1363,7 +1359,7 @@
         </geometry>
       </collision>
       <collision name='rear_left_wheel_link_fixed_joint_lump__rear_left_wheel_rim_link_collision_2'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -1466,7 +1462,7 @@
     <link name='rear_right_motor_asm_link'>
       <pose relative_to='rear_right_motor_asm_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 -0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 -0.025 0 90 0 0</pose>
         <mass>0.1</mass>
         <inertia>
           <ixx>2.723333333333334e-05</ixx>
@@ -1478,7 +1474,7 @@
         </inertia>
       </inertial>
       <collision name='rear_right_motor_asm_link_collision'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+        <pose degrees="true">0 0 0 0 90 0</pose>
         <geometry>
           <cylinder>
             <length>0.064</length>
@@ -1487,7 +1483,7 @@
         </geometry>
       </collision>
       <collision name='rear_right_motor_asm_link_collision_1'>
-        <pose>0 -0.025 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 -0.025 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -1538,7 +1534,7 @@
     <link name='rear_right_wheel_link'>
       <pose relative_to='rear_right_wheel_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <mass>0.19</mass>
         <inertia>
           <ixx>0.0002022409166666667</ixx>
@@ -1550,7 +1546,7 @@
         </inertia>
       </inertial>
       <collision name='rear_right_wheel_link_collision'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.062</length>
@@ -1570,7 +1566,7 @@
         </surface>
       </collision>
       <collision name='rear_right_wheel_link_fixed_joint_lump__rear_right_wheel_adapter_link_collision_1'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.024</length>
@@ -1579,7 +1575,7 @@
         </geometry>
       </collision>
       <collision name='rear_right_wheel_link_fixed_joint_lump__rear_right_wheel_rim_link_collision_2'>
-        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <pose degrees="true">0 0 0 90 0 0</pose>
         <geometry>
           <cylinder>
             <length>0.05</length>
@@ -1738,7 +1734,7 @@
         </inertia>
       </inertial>
       <sensor name="imu_sensor" type="imu">
-        <pose>0 0 0 3.141593 0 0</pose>
+        <pose degrees="true">0 0 0 180 0 0</pose>
         <always_on>1</always_on>
         <update_rate>1000.0</update_rate>
       </sensor>
@@ -1762,53 +1758,50 @@
     </joint>
 
     <!-- plugins -->
-    <plugin filename="libgz-sim-joint-state-publisher-system.so"
+    <plugin filename="gz-sim-joint-state-publisher-system"
       name="gz::sim::systems::JointStatePublisher">
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin
+      filename="gz-sim-odometry-publisher-system"
+      name="gz::sim::systems::OdometryPublisher">
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <dimensions>3</dimensions>
+    </plugin>
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>front_left_wheel_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>front_right_wheel_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>mid_left_wheel_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>mid_right_wheel_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>rear_left_wheel_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>rear_right_wheel_joint</joint_name>
     </plugin>
 
-    <plugin name="ArduPilotPlugin" filename="libArduPilotPlugin.so">
+    <plugin name="ArduPilotPlugin" filename="ArduPilotPlugin">
       <!-- Port settings -->
       <fdm_addr>127.0.0.1</fdm_addr>
       <fdm_port_in>9002</fdm_port_in>
       <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
       <lock_step>1</lock_step>
 
-      <!-- Frame conventions
-        modelXYZToAirplaneXForwardZDown:
-          - transforms body frame from orientation in Gazebo to NED
-
-        gazeboXYZToNED
-          - transforms world from Gazebo convention xyz = N -E -D
-            to ArduPilot convention xyz = NED
-
-        Vehicle is oriented x-forward, y-left, z-up
-      -->
-      <modelXYZToAirplaneXForwardZDown>0 0 0 3.141593 0 0</modelXYZToAirplaneXForwardZDown>
-      <gazeboXYZToNED>0 0 0 3.141593 0 0</gazeboXYZToNED>
+      <modelXYZToAirplaneXForwardZDown degrees="true">0 0 0 180 0 0</modelXYZToAirplaneXForwardZDown>
+      <gazeboXYZToNED degrees="true">0 0 0 180 0 90</gazeboXYZToNED>
 
       <!-- Sensors -->
       <imuName>imu_sensor</imuName>

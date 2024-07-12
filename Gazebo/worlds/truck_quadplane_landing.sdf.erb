@@ -29,28 +29,28 @@
   trailer_model = make_trailer_model('trailer', trailer_pose, 9012)
 
   # make the tractor model and inject trailer
-  tractor_pose = '0 0 1.0 0 0 0'
+  tractor_pose = '0 0 1.0 0 0 1.57079632'
   tractor_model = make_tractor_model('tractor', tractor_pose, 9002,
     trailer_joint, trailer_model)
 
   # make the quadplane and place on the trailer
-  quadplane_pose = '-8.0 0 1.6 0 0 0'
+  quadplane_pose = '0 -8.0 1.6 0 0 1.57079632'
   quadplane_model = make_quadplane_model('quadplane', quadplane_pose, 9022)
 %>
 
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <world name="truck_quadplane_landing">
-    <plugin filename="libgz-sim-physics-system.so"
+  <world name="runway">
+    <plugin filename="gz-sim-physics-system"
       name="gz::sim::systems::Physics">
     </plugin>
-    <plugin filename="libgz-sim-user-commands-system.so"
+    <plugin filename="gz-sim-user-commands-system"
       name="gz::sim::systems::UserCommands">
     </plugin>
-    <plugin filename="libgz-sim-scene-broadcaster-system.so"
+    <plugin filename="gz-sim-scene-broadcaster-system"
       name="gz::sim::systems::SceneBroadcaster">
     </plugin>
-    <plugin filename="libgz-sim-imu-system.so"
+    <plugin filename="gz-sim-imu-system"
       name="gz::sim::systems::Imu">
     </plugin>
 
@@ -75,6 +75,7 @@
     </light>
 
     <include>
+      <pose degrees="true">-29 545 0 0 0 363</pose>
       <uri>model://runway</uri>
     </include>
 

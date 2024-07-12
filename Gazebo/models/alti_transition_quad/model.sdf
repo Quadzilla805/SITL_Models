@@ -715,7 +715,7 @@
         </inertia>
       </inertial>
       <sensor name="imu_sensor" type="imu">
-        <pose>0 0 0 3.141593 0 0</pose>
+        <pose degrees="true">0 0 0 180 0 0</pose>
         <always_on>1</always_on>
         <update_rate>1000.0</update_rate>
       </sensor>
@@ -739,17 +739,17 @@
     </joint>
 
     <!-- plugins -->
-    <plugin filename="libgz-sim-joint-state-publisher-system.so"
+    <plugin filename="gz-sim-joint-state-publisher-system"
       name="gz::sim::systems::JointStatePublisher">
     </plugin>
     <!-- motor_1 (cw) lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -760,13 +760,13 @@
       <upward>0 0 1</upward>
       <link_name>motor_1</link_name>
     </plugin>
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -778,13 +778,13 @@
       <link_name>motor_1</link_name>
     </plugin>
     <!-- motor_2 (cw) lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -795,13 +795,13 @@
       <upward>0 0 1</upward>
       <link_name>motor_2</link_name>
     </plugin>
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -813,13 +813,13 @@
       <link_name>motor_2</link_name>
     </plugin>
     <!-- motor_3 (ccw) lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -830,13 +830,13 @@
       <upward>0 0 1</upward>
       <link_name>motor_3</link_name>
     </plugin>
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -848,13 +848,13 @@
       <link_name>motor_3</link_name>
     </plugin>
     <!-- motor_4 (ccw) lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -865,13 +865,13 @@
       <upward>0 0 1</upward>
       <link_name>motor_4</link_name>
     </plugin>
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.3</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -883,13 +883,13 @@
       <link_name>motor_4</link_name>
     </plugin>
     <!-- motor_f (ccw) lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.30</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -900,13 +900,13 @@
       <upward>0 0 1</upward>
       <link_name>motor_f</link_name>
     </plugin>
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.30</a0>
       <alpha_stall>1.4</alpha_stall>
       <cla>4.2500</cla>
       <cda>0.10</cda>
-      <cma>0.00</cma>
+      <cma>0.0</cma>
       <cla_stall>-0.025</cla_stall>
       <cda_stall>0.0</cda_stall>
       <cma_stall>0.0</cma_stall>
@@ -918,16 +918,16 @@
       <link_name>motor_f</link_name>
     </plugin>
     <!-- main_wing lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.13</a0>
       <cla>3.7</cla>
       <cda>0.06417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>0.02 0 0.021946</cp>
       <area>0.8306432</area>
       <air_density>1.2041</air_density>
@@ -936,16 +936,16 @@
       <link_name>base_link</link_name>
     </plugin>
     <!-- left_aileron lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.15</a0>
       <cla>6.8</cla>
       <cda>0.06417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.6391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-0.161120956 1.116470319 0.073423477</cp>
       <area>0.031165499</area>
       <air_density>1.2041</air_density>
@@ -956,16 +956,16 @@
       <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
     </plugin>
     <!-- right_aileron lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.15</a0>
       <cla>6.8</cla>
       <cda>0.06417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.6391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-0.161120956 -1.116470319 0.073423477</cp>
       <area>0.031165499</area>
       <air_density>1.2041</air_density>
@@ -976,16 +976,16 @@
       <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
     </plugin>
     <!-- left_winglet lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.0</a0>
       <cla>4.752798721</cla>
       <cda>0.6417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-0.19 1.46 0.15</cp>
       <area>0.0152</area>
       <air_density>1.2041</air_density>
@@ -994,16 +994,16 @@
       <link_name>base_link</link_name>
     </plugin>
     <!-- right_winglet lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.0</a0>
       <cla>4.752798721</cla>
       <cda>0.6417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-0.19 -1.46 0.15</cp>
       <area>0.0152</area>
       <air_density>1.2041</air_density>
@@ -1012,16 +1012,16 @@
       <link_name>base_link</link_name>
     </plugin>
     <!-- hstab lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.13</a0>
       <cla>3.7</cla>
       <cda>0.06417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-1.383506602 0 0.213284959</cp>
       <area>0.0864</area>
       <air_density>1.2041</air_density>
@@ -1030,16 +1030,16 @@
       <link_name>base_link</link_name>
     </plugin>
     <!-- elevator lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.15</a0>
       <cla>6.8</cla>
       <cda>0.06417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.6391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-1.383506602 0 0.213284959</cp>
       <area>0.02376</area>
       <air_density>1.2041</air_density>
@@ -1050,16 +1050,16 @@
       <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
     </plugin>
     <!-- left_vstab lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.0</a0>
       <cla>4.752798721</cla>
       <cda>0.6417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-1.25 0.405 0.1</cp>
       <area>0.0378</area>
       <air_density>1.2041</air_density>
@@ -1068,16 +1068,16 @@
       <link_name>base_link</link_name>
     </plugin>
     <!-- right_vstab lift-drag -->
-    <plugin filename="libgz-sim-lift-drag-system.so"
+    <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.0</a0>
       <cla>4.752798721</cla>
       <cda>0.6417112299</cda>
-      <cma>-1.8</cma>
+      <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
       <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0</cma_stall>
+      <cma_stall>0.0</cma_stall>
       <cp>-1.25 -0.405 0.1</cp>
       <area>0.0378</area>
       <air_density>1.2041</air_density>
@@ -1086,54 +1086,44 @@
       <link_name>base_link</link_name>
     </plugin>
 
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>motor_1_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>motor_2_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>motor_3_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>motor_4_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>motor_f_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>left_aileron_joint</joint_name>
     </plugin>
-    <plugin filename="libgz-sim-apply-joint-force-system.so"
+    <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>right_aileron_joint</joint_name>
     </plugin>
 
-    <plugin name="ArduPilotPlugin" filename="libArduPilotPlugin.so">
+    <plugin name="ArduPilotPlugin" filename="ArduPilotPlugin">
       <!-- Port settings -->
       <fdm_addr>127.0.0.1</fdm_addr>
       <fdm_port_in>9002</fdm_port_in>
       <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
       <lock_step>1</lock_step>
 
-      <!-- Frame conventions
-        modelXYZToAirplaneXForwardZDown:
-          - transforms body frame from orientation in Gazebo to NED
-
-        gazeboXYZToNED
-          - transforms world from Gazebo convention xyz = N -E -D
-            to ArduPilot convention xyz = NED
-
-        VTOL is oriented x-forward, y-left, z-up
-      -->
-      <modelXYZToAirplaneXForwardZDown>0 0 0 3.141593 0 0</modelXYZToAirplaneXForwardZDown>
-      <gazeboXYZToNED>0 0 0 3.141593 0 0</gazeboXYZToNED>
+      <modelXYZToAirplaneXForwardZDown degrees="true">0 0 0 180 0 0</modelXYZToAirplaneXForwardZDown>
+      <gazeboXYZToNED degrees="true">0 0 0 180 0 90</gazeboXYZToNED>
 
       <!-- Sensors -->
       <imuName>imu_sensor</imuName>

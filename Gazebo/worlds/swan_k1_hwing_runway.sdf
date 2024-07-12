@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <world name="swan_k1_hwing_runway">
+  <world name="runway">
     <physics name="1ms" type="ignore">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
@@ -92,12 +92,12 @@
     </model>
 
     <include>
+      <pose degrees="true">-29 545 0 0 0 363</pose>
       <uri>model://runway</uri>
     </include>
 
     <include>
-      <!-- <pose>0 0 0.3 0 0 0</pose> -->
-      <pose>0 0 0.3 0 -1.570796 0</pose>
+      <pose degrees="true">0 0 0.3 0 -90 0</pose>
       <uri>model://swan_k1_hwing</uri>
     </include>
 
